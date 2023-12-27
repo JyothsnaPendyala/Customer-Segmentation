@@ -34,7 +34,7 @@ def visualize_data():
         fig.update_layout(template='plotly_dark')
         fig.update_xaxes(showgrid=False)
         fig.update_yaxes(showgrid=False)
-        a.append(fig)
+        # a.append(fig)
         # fig.show()
         fig.write_image(f"histogram_{categorical_feature}.jpg")
     data['sex'] = data['sex'].replace('male', 0)
@@ -62,7 +62,7 @@ def visualize_data():
         fig.update_layout(template='plotly_dark')
         fig.update_xaxes(showgrid=False)
         fig.update_yaxes(showgrid=False,zeroline=True,zerolinewidth=4)
-        a.append(fig)
+        # a.append(fig)
         # fig.show()
         fig.write_image(f"boxplot_{numerical_feature}.jpg")
     return data
