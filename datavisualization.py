@@ -1,6 +1,12 @@
 from data_preprocessing import preprocess_data
 import matplotlib.pyplot as plt
 import seaborn as sns
+import plotly.express as px
+import plotly.figure_factory as ff
+import plotly.graph_objects as go
+import plotly.io as pio
+import io
+from PIL import Image
 
 def visualize_data():
     data, numerical_columns, categorical_columns = preprocess_data()
